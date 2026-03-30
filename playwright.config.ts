@@ -47,7 +47,7 @@ export default defineConfig<TestOptions>({
     // actionTimeout: 5000,
     // navigationTimeout: 5000
     
-      headless: false,
+      headless: !!process.env.CI,
   launchOptions: {
     slowMo: 300,
   }
