@@ -41,7 +41,6 @@ export default defineConfig<TestOptions>({
         uploadToArgos: !!process.env.CI,
       },
     ],
-  ,
     ['html'],
     ['json',{outputFile:'test-results/jsonReport.json'}],
     ['junit',{outputFile:'test-results/junitReport.json'}]
