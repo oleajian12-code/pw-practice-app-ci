@@ -55,5 +55,6 @@ await page.goto('/')
 test('testing with argos CI', async({page}) =>{
      const pm = new PageManager(page)
      await pm.navigateTo().datepickerPage()
+     console.log("this is a test of ci")
     
 })
