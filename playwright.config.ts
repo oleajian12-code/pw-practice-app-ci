@@ -70,7 +70,9 @@ export default defineConfig<TestOptions>({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'],
+        headless: !!process.env.CI,
+       },
     },
        {
       name: 'mobile',
